@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Recursive Partitioning</title>
+</head>
+<body>
+
+    <div id="container">
+        <div class="partition" id="initialPartition" style="background-color: #d3d3d3; width: 100%; height: 100%;">
+            <div class="buttons">
+                <button onclick="splitVertical(this.parentElement.parentElement)">V</button>
+                <button onclick="splitHorizontal(this.parentElement.parentElement)">H</button>
+                <button onclick="removePartition(this.parentElement.parentElement)">-</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
